@@ -9,7 +9,7 @@
 
 
 let name="ayun";
-let age=21;  
+let age=21;  //number
 let postGraguated= false;
 let children=null; // initialized with empty .(object)
 let college; // not even initialized after declaration.(datatype->undefined itself)
@@ -21,9 +21,9 @@ let college; // not even initialized after declaration.(datatype->undefined itse
 
 
 
-console.log(typeof(x));
+console.log(typeof(x)); //undefined error
 console.table([name,age,postGraguated,children,college]);
-console.table([typeof(name),typeof[age],typeof(postGraguated),typeof[children],typeof(college)]);
+console.table([typeof(name), typeof(age), typeof(postGraguated), typeof(children), typeof(college)]);
 
 
 
