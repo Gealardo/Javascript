@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COLOUR-CHANGER</title>
+   <script src="01_colorChenger.js" defer></script>
+  <style>
+  .button{
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+    margin: 10px;
+  }
+
+  #yellow{
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+   #grey{
+    border: 2px solid pink;
+    border-radius: 50%;
+    background-color: grey;
+  }
+   #pink{
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: pink;
+  }
+   #black{
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: black;
+  }
+  body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  </style>
+</head>
+<body >
+  <h1>Click on box to change the color</h1>
+  <div class="buttons">
+  
+  <span class="button" id = "yellow"></span>
+  <span class="button" id = "grey"></span>
+  <span class="button" id = "pink"></span>
+  <span class="button" id = "black"></span>
+
+ </div>
+ <h2>Basic Project "color switcher"</h2>
+ 
+
+</body>
+</html>
