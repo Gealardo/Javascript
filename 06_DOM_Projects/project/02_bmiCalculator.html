@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI-calculator</title>
+  <script src="02_bmiCalculator.js" defer></script>
+  <style>
+   body{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .pagebox{
+    /* border: 1px solid black; */
+    height :500px;
+    width: 500px;
+    background-color: rgb(120, 114, 114);
+   display: flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+   align-items: center;
+    
+   }
+   .butn{
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+   }
+   #decor{
+      background-color: gray;
+      padding: 2px;
+      border-radius: 12px;
+      font-weight: lighter;
+   }
+   
+  </style>
+</head>
+
+<body>
+      
+   
+   <form class="pagebox">
+          <h1 class="headtext">BMI <span id="decor" >Calculator</span></h1>
+       
+         <div class="hbtn">
+               <label for="height"><span id="decor">Height in CM:</span> </label>
+              <input type="text" id="height" name="heightforbmi">
+         </div>
+         
+         <div class="wbtn">
+               <label for="weight"><span id="decor">Weight in Kg :</span></label>
+               <input type="text" id="weight" name="weightforbmi">
+         </div> 
+         <button calss="butn">Calculate</button>
+         <div class="result"></div>
+         <div class="info">
+         <h2 class="guidhead">BMI Guidence</h2>
+         <p style="color: rgb(220, 220, 49); font-size: larger;">underweight : Less than 18.6</p>
+         <p style="color: rgb(18, 233, 18); font-size: larger;">Normal : 18.6 to 24.9</p>
+         <p style="color: rgb(191, 31, 31); font-size: larger;">Overweight : Greater than 24.9 </p>
+
+         </form>
+         
+
+   </div>
+
+</body>
+</html>
