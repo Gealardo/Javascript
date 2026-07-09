@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asynch</title>
+</head>
+<body>
+     <h1>I'm learning Javascript</h1>
+     <button id="btn">stop</button>
+     
+</body>
+<script>
+// setTimeOut
+
+// setTimeout(function (){
+//   let head=document.querySelector('h1')
+//   head.innerHTML='Changet text'
+//   console.log('changed')
+// },2000)
+
+/*
+
+const changetext=function (){
+  let head=document.querySelector('h1')
+  head.innerHTML='Changet text'
+  console.log('changed')
+}
+const changer=setTimeout(changetext,2000)
+
+
+//clearTimeOut
+const button=document.querySelector('#btn')
+
+button.addEventListener('click',function(){
+  clearTimeout(changer);
+  console.log('stopped')
+})
+
+*/
+
+//setInterval
+const fchange=function(){
+  console.log(new Date().toLocaleTimeString())
+}
+const changer=setInterval(fchange,1000)
+//clearInterval
+document.querySelector('#btn').addEventListener('click',function(){
+  clearInterval(changer)
+  console.log("changed stopped")
+})
+
+
+</script>
+</html>
