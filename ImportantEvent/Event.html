@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events Practice</title>
+</head>
+<body>
+
+    <h3>1. Basic & Event Object</h3>
+    <button id="myBtn">Click Me</button>
+    
+
+    <h3>2. Prevent Default</h3>
+    <form id="myForm">
+        <input type="text" placeholder="Type something">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>3. Bubbling & Stop Propagation</h3>
+    <div id="parent" style="padding: 20px; background: #ddd;">
+        <button id="child">Child Button</button>
+    </div>
+
+    <h3>4. Event Delegation</h3>
+    <ul id="todoList">
+        <li>Task 1</li>
+        <li >Task 2</li>
+        <li>Task 3</li>
+    </ul>
+
+    <h3>5. Remove Event Listener</h3>
+    <button id="removeBtn">Click Me (Only Works Once)</button>
+
+    <h3>Event Bubbling vs Capturing Practice</h3>
+
+   <div id="myparent" style="padding: 40px; background-color: lightblue;">
+      Parent Div
+      <br><br>
+    <button id="mychild" style="padding: 10px 20px;">
+        Child Button
+    </button>
+  </div>
+
+ 
+
+    <script src="Event.js"></script>
+</body>
+</html>
