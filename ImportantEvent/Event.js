@@ -100,65 +100,6 @@ listContainer.addEventListener('click', function(e) {
         e.target.style.color='red' 
     }
 });
-
-// ==========================================
-// JS EVENTS - CHEAT SHEET & NOTES
-// ==========================================
-
-// 1. ADD EVENT LISTENER (Standard way)
-const btn = document.querySelector('#myBtn');
-
-btn.addEventListener('click', function(e) {
-    console.log('Button clicked');
-    
-    // Event Object (e) properties:
-    console.log(e.target);    // The exact element that was clicked
-    console.log(e.type);      // The type of event ('click')
-    console.log(e.clientX);   // Mouse X coordinate
-});
-
-
-// 2. PREVENT DEFAULT BEHAVIOR
-// Stops browser defaults like form submission or link navigation
-const form = document.querySelector('#myForm');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevents page reload
-    console.log('Form submitted without reloading');
-});
-
-
-// 3. EVENT BUBBLING & STOP PROPAGATION
-// Events bubble up from child -> parent -> body -> html
-const parent = document.querySelector('#parent');
-const child = document.querySelector('#child');
-
-parent.addEventListener('click', function() {
-    console.log('Parent div clicked');
-});
-
-child.addEventListener('click', function(e) {
-    console.log('Child button clicked');
-    
-    // Uncomment the line below to stop the event from reaching the parent
-    // e.stopPropagation(); 
-});
-
-
-// 4. EVENT DELEGATION (Most important for projects)
-// Instead of adding listeners to every child, add ONE to the parent.
-// This works for dynamically added elements too.
-const list = document.querySelector('#todoList');
-
-list.addEventListener('click', function(e) {
-    // Check if the clicked target is an LI
-    if (e.target.tagName === 'LI') {
-        e.target.style.textDecoration = 'line-through';
-        console.log('Toggled task:', e.target.innerText);
-    }
-});
-
-
 // 5. REMOVING EVENT LISTENERS
 // You MUST use a named function reference. Anonymous functions cannot be removed.
 const removeB = document.querySelector('#removeBtn');
@@ -171,6 +112,5 @@ function handleClickOnce() {
 }
 
 removeB.addEventListener('click', handleClickOnce);
-
 
 
